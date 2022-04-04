@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600;800&display=swap')
+$fontFam: 'Nunito Sans', sans-serif
+$darkBlue: hsl(209, 23%, 22%)
+$veryDarkBlue: hsl(207, 26%, 17%)
+$veryDarkBlue2: hsl(200, 15%, 8%)
+$darkGray: hsl(0, 0%, 52%)
+$veryLightGray: hsl(0, 0%, 98%)
+$white: hsl(0, 0%, 100%)
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $fontFam
+    font-size: 14px
+    color: $white
+body
+    background-color: $veryDarkBlue
+.main
+input
+    border: none
+    outline: none
+    background: $darkBlue
+    cursor: pointer
+#darkMode
+    cursor: pointer
+.countriesList
+    background-color: $darkBlue
+    .imgContainer
+        width: 100%
+        img
+            width: 100%
+.header
+    background-color: $darkBlue
+#goMain
+    cursor: pointer
+.search
+    background-color: $darkBlue
+    border-radius: 5px
+    cursor: text
+    input
+        cursor: text
+    i
+        cursor: pointer
+#searcher
+    color: $white
+.filter
+    background-color: $darkBlue
+    position: relative
+    border-radius: 5px
+    cursor: pointer
+.regions
+    background-color: $darkBlue
+    width: 60%
+    border-radius: 5px
+    position: absolute
+    z-index: 55
+    display: none
+    input
+        display: block
+        padding: 5% 5%
+        border-radius: 5px
+.countriesList
+    text-align: left
+    margin: 5% auto
+    width: 20%
+    padding: 10% 0%
+    border-radius: 5px
+    cursor: pointer
+    .imgContainer
+        padding: 2%
+        width: 100%
+        height: 50%
+    .infoContainer
+        width: 100%
+        padding: 0% 7%
+        .countryName
+            font-size: 1.5rem
+            font-weight: 600     
+            padding: 5% 0
+        .infos
+            padding: 2% 
+            span
+                font-weight: 300
+.borderCountries
+    box-shadow: 0.5px 0.5px 5px $veryDarkBlue2
+    margin-top: 1%
+.backButton
+    background-color: $darkBlue
+    cursor: pointer
+.detailPage
+    display: none     
+.allContainer
+    width: 100%
+
+@media screen and (max-width:400px)
+    .header
+        padding: 7% 3%
+        font-weight: 600
+        width: 100%
+        height: 5rem
+        .title
+            font-weight: 800
+            display: inline-block 
+        span
+            margin-left: 30%
+            i
+                margin-right: 2%
+    .main
+        padding: 3%
+        text-align: center
+        .search
+            margin-top: 5%
+            padding: 6%
+            width: 100%
+            text-align: left
+            i
+                margin-right: 10%
+            #searcher
+                &::placeholder
+                    color: $white
+                    font-weight: 300
+        .filter
+            width: 60%
+            margin-top: 10%
+            padding: 5%
+            border-radius: 5px
+            i
+                margin-left: 15%
+        .regions
+            margin-top: 1%
+        .countriesList
+            text-align: left
+            margin: 5% auto
+            width: 80%
+            padding: 0 0 10% 0
+            .imgContainer
+                width: 100%
+                height: 50%
+                padding: 0
+                img
+                    border-top-left-radius: 5px
+                    border-top-right-radius: 5px
+        .infoContainer
+            width: 100%
+            padding: 0% 7%
+            .countryName
+                font-size: 1.5rem
+                font-weight: 600     
+                padding: 5% 0   
+            .infos
+                padding: 2% 
+                span
+                    font-weight: 300
+    .detailPage
+        width: 100%
+        span
+            font-weight: 300
+        .backButton
+            width: 35%
+            background-color: $darkBlue
+            padding: 2% 7%
+            text-align: center
+            margin: 10% 5% 5% 5%
+            border-radius: 2px
+            box-shadow: 1px 1px 10px $veryDarkBlue2
+            i
+                margin-right: 21%
+            input
+                font-size: 1.1rem
+    .detailContainer
+        width: 60%
+        padding: 0 2%
+        width: 90%
+        padding: 10% 0%
+        margin: auto
+        .imgDetail
+            text-align: center
+            width: 100%
+            img
+                width: 100%
+    .infos
+        padding: 5% 0
+    .other3Container
+        //sad
+    .otherDetails
+        padding: 15% 0% 0% 0%
+        .title
+            font-size: 2rem
+            padding: 5% 0
+        span
+            font-weight: 300
+    .borderTitle
+        padding: 15% 0 5% 0
+    .borderbtnContainer
+        width: 100%
+        text-align: left
+        .borderCountries
+            padding: 2% 4%
+            width: 31%
+            margin-right: 1.5%
+
+@media screen and (min-width:401px) and (max-width:1024px)
+    @import "_midscreen.sass"
+     
+@media screen and (min-width:1025px) 
+    @import "_bigscreen.sass"
+

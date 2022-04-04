@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Modal</title>
+</head>
+<body>
+        <div class="header">
+            <h3 id="goMain" class="title">Where in the world?</h3>
+            <span id="darkMode"><i class="fa-solid fa-moon"></i>Dark Mode</span>
+        </div>
+    <div id="main" class="main">
+        <div class="search">
+            <i id="searchByName" class="fa-solid fa-magnifying-glass"></i>
+            <input class="getCountryName" type="text" placeholder="Search for a country..." id="searcher">
+        </div>
+        <div class="filter">
+            <span>Filter By Region</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="regions">
+            <input class="getRegion" type="button" id="africa" value="Africa">
+            <input class="getRegion" type="button" id="america" value="Americas">
+            <input class="getRegion" type="button" id="asia" value="Asia">
+            <input class="getRegion" type="button" id="europe" value="Europe">
+            <input class="getRegion" type="button" id="ocenia" value="Oceania">
+        </div>
+        <div id="allContainer" class="allContainer">
+
+        </div>
+        
+    </div>
+    <div class="detailPage">
+        <div class="backButton">
+            <i class="fa-solid fa-arrow-left"></i>
+            <input id="backB" type="button" value="Back">
+        </div>
+        <div class="detailContainer">
+            <div class="imgBigger">
+            <div class="imgDetail" id="flagDetail">
+                <img src="" id="flagss" alt="">
+            </div>
+            </div>
+        <div class="contenter1">
+            <div class="otherDetails">
+                <h1 id="nameId" class="title"></h2>
+                <h3 class="infos">Native Name: <span id="nativeName"> </span></h3>
+                <h3 class="infos">Population: <span id="population"></span></h3>
+                <h3 class="infos">Region: <span id="region"></span></h3>
+                <h3 class="infos">Sub Region: <span id="subRegion"></span></h3>
+                <h3 class="infos">Capital: <span id="capital"></span></h3>
+            </div>
+            <div class="other3Container">
+                <h3 class="infos">Top Level Domain: <span id="topLevelDomain">1302</span></h3>
+                <h3 class="infos">Currencies: <span id="currencies">1302</span></h3>
+                <h3 class="infos">Languages: <span id="languages">1302</span></h3>
+            </div>
+                    
+                <div class="borderbtnContainer" id="borderbtnContainer">
+                    <h2 class="borderTitle">Border Countries:</h2>
+                  
+                </div>
+        </div>
+    </div>
+
+    </div>
+
+
+<script src="./app.js"></script>
+</body>
+</html>
